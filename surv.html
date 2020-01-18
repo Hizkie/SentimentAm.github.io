@@ -6,7 +6,9 @@
         $(function () {
             document.getElementById('file').onclick = function () {
                $.get('124.txt', function(data) {
-   alert(data)
+   data =  data.split("\n");
+   alert(data[0])
+                   
 }, 'text');
 
                 };
