@@ -9,8 +9,8 @@
                i = i + 1;
                $.get('124.txt', function(data) {
    data =  data.split("\n");
-   document.getElementById("text").innerHTML = data[i]
-   //alert(data[i])
+ $("#mytext").append(data[i]);  
+ //alert(data[i])
                    
 }, 'text');
 
@@ -22,7 +22,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-             <div id="text">
+             <div id="mytext">
                  
             </div>
             <input type="radio" name="sentiment" value="positive">Positive
