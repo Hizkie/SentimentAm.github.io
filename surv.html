@@ -4,6 +4,8 @@
 
     <script>
         i = 0;
+        $('#file').click(function() {
+   if($('#input[name='gender']).is(':checked')) { 
         $(function () {
             document.getElementById('file').onclick = function () {
                i = i + 1;
@@ -29,6 +31,9 @@
                 };
                
         });
+        }
+        });
+        
     </script>
 </head>
 <body>
