@@ -16,7 +16,8 @@
                 } else {
                   $.get('124.txt', function(data) {
                         data =  data.split("\n");
-                         document.getElementById('mytext').innerHTML = "Thank you for finalizing the tweet"
+                         document.getElementById('mytext').innerHTML = "Thank you for filling the survey"
+                         document.getElementById('myform').innerHTML = " "
                              }, 'text');
                 }
 
@@ -36,11 +37,13 @@
              <div id="mytext">
                  
             </div>
+            <div id="myform">
             <input type="radio" name="sentiment" value="positive">Positive
             <input type="radio" name="sentimen" value="negative">Negative
             <input type="radio" name="sentimen" value="nuetral"> Neutral
             <input type="radio" name="sentimen" value="mixed"> Mixed <br>
             <button type="button" name="file" id="file">Save and continue</button>
+            </div>
         </div>
     </form>
 </body>
