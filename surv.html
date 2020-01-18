@@ -12,12 +12,13 @@
                          $.get('124.txt', function(data) {
                         data =  data.split("\n");
                          document.getElementById('mytext').innerHTML = data[i];
+                             }, 'text');
                 }
 
- $("#mytext").append(data[i]);  
+ //$("#mytext").append(data[i]);  
  //alert(data[i])
                    
-}, 'text');
+
 
                 };
                
