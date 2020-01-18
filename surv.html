@@ -4,7 +4,7 @@
 
     <script>
           i = 0;
- 
+        function slider(){
         $(function () {
                   
             document.getElementById('file').onclick = function () {
@@ -51,7 +51,7 @@
                 };
                
         });
-        
+        }
     </script>
 </head>
 <body>
@@ -65,7 +65,7 @@
             <input id="neg" type="radio" name="sentiment" value="negative">Negative
             <input id="neu" type="radio" name="sentiment" value="nuetral"> Neutral
             <input id="mix" type="radio" name="sentiment" value="mixed"> Mixed <br>
-            <button type="submit" name="file" id="file">Save and continue</button>
+            <button type="submit" name="file" onclick="slider()" id="file">Save and continue</button>
             </div>
         </div>
     </form>
