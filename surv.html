@@ -9,7 +9,8 @@
                i = i + 1;
                $.get('124.txt', function(data) {
    data =  data.split("\n");
-   alert(data[i])
+   document.getElementById("text").innerHTML = data[i]
+   //alert(data[i])
                    
 }, 'text');
 
@@ -27,7 +28,7 @@
             <input type="radio" name="sentiment" value="positive">Positive
             <input type="radio" name="sentimen" value="negative">Negative
             <input type="radio" name="sentimen" value="nuetral"> Neutral
-            <input type="radio" name="sentimen" value="mixed"> Mixed
+            <input type="radio" name="sentimen" value="mixed"> Mixed <br>
             <button type="botton" name="file" id="file">Save and continue</button>
         </div>
     </form>
