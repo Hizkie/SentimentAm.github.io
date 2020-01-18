@@ -9,7 +9,8 @@
                i = i + 1;
                $.get('124.txt', function(data) {
    data =  data.split("\n");
- $("#mytext").append(data[i]);  
+  document.getElementById('mytext').innerHTML = data[i];
+ //$("#mytext").append(data[i]);  
  alert(data[i])
                    
 }, 'text');
