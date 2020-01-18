@@ -3,9 +3,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script>
-        i = 0;
-        $('#file').click(function() {
-   if($('#input[name='gender']).is(':checked')) { 
+          i = 0;
         $(function () {
             document.getElementById('file').onclick = function () {
                i = i + 1;
@@ -18,8 +16,7 @@
                 } else {
                   $.get('124.txt', function(data) {
                         data =  data.split("\n");
-                         document.getElementById('mytext').innerHTML = "Thank you for filling the survey"
-                         document.getElementById('myform').innerHTML = " "
+                         document.getElementById('mytext').innerHTML = "Thank you for finalizing the tweet"
                              }, 'text');
                 }
 
@@ -30,8 +27,6 @@
 
                 };
                
-        });
-        }
         });
         
     </script>
