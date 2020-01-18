@@ -7,9 +7,13 @@
         $(function () {
             document.getElementById('file').onclick = function () {
                i = i + 1;
-               $.get('124.txt', function(data) {
-   data =  data.split("\n");
-  document.getElementById('mytext').innerHTML = data[i];
+                if(i<10) {
+                    
+                         $.get('124.txt', function(data) {
+                        data =  data.split("\n");
+                         document.getElementById('mytext').innerHTML = data[i];
+                }
+
  //$("#mytext").append(data[i]);  
  //alert(data[i])
                    
