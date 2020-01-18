@@ -13,6 +13,11 @@
                         data =  data.split("\n");
                          document.getElementById('mytext').innerHTML = data[i];
                              }, 'text');
+                } else {
+                  $.get('124.txt', function(data) {
+                        data =  data.split("\n");
+                         document.getElementById('mytext').innerHTML = "Thank you for finalizing the tweet"
+                             }, 'text');
                 }
 
  //$("#mytext").append(data[i]);  
