@@ -8,8 +8,13 @@
         $(function () {
                   
             document.getElementById('file').onclick = function () {
-                var isChecked = $('#pos').prop('checked');
-                  alert(isChecked)
+                var isposChecked = $('#pos').prop('checked');
+                var isnegChecked = $('#pos').prop('checked');
+                var isneuChecked = $('#pos').prop('checked');
+                var ismixChecked = $('#pos').prop('checked');
+
+
+                  alert(ismixChecked)
                i = i + 1;
                 if(i<10) {
                     
@@ -45,9 +50,9 @@
             </div>
             <div id="myform">
             <input id="pos" type="radio" name="sentiment" value="positive">Positive
-            <input id="neg" type="radio" name="sentimen" value="negative">Negative
-            <input id="neu" type="radio" name="sentimen" value="nuetral"> Neutral
-            <input id="mix" type="radio" name="sentimen" value="mixed"> Mixed <br>
+            <input id="neg" type="radio" name="sentiment" value="negative">Negative
+            <input id="neu" type="radio" name="sentiment" value="nuetral"> Neutral
+            <input id="mix" type="radio" name="sentiment" value="mixed"> Mixed <br>
             <button type="button" name="file" id="file">Save and continue</button>
             </div>
         </div>
