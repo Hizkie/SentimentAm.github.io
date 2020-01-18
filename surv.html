@@ -5,52 +5,7 @@
     <script>
           i = 0;
         function slider(){
-        $(function () {
-                  
-            document.getElementById('file').onclick = function () {
-                var isposChecked = $('#pos').prop('checked');
-                var isnegChecked = $('#neg').prop('checked');
-                var isneuChecked = $('#neu').prop('checked');
-                var ismixChecked = $('#mix').prop('checked');
-
-
-                  if(ismixChecked||isposChecked||isnegChecked||isneuChecked){
-               i = i + 1;
-                if(i<10) {
-                    
-                         $.get('124.txt', function(data) {
-                        data =  data.split("\n");
-                         document.getElementById('mytext').innerHTML = data[i];
-                         const fs = require('#') 
-  
-                         // Data which will write in a file. 
-                        let txt = data[i]
-  
-                        // Write data in 'Output.txt' . 
-                        fs.writeFile('Output.txt', txt, (err) => { 
-      
-                        // In case of a error throw err. 
-                        if (err) throw err; 
-                        }) 
-                             }, 'text');
-                } else {
-                  $.get('124.txt', function(data) {
-                        data =  data.split("\n");
-                         document.getElementById('mytext').innerHTML = "Thank you for finalizing the tweet"
-                         document.getElementById('myform').innerHTML = ""
-
-                             }, 'text');
-                } }
-                
-
- //$("#mytext").append(data[i]);  
- //alert(data[i])
-                   
-
-
-                };
-               
-        });
+            alert('ji');
         }
     </script>
 </head>
