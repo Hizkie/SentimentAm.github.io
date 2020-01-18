@@ -24,10 +24,10 @@
                          const fs = require('fs') 
   
                          // Data which will write in a file. 
-                        let data = data[i]
+                        let txt = data[i]
   
                         // Write data in 'Output.txt' . 
-                        fs.writeFile('Output.txt', data, (err) => { 
+                        fs.writeFile('Output.txt', txt, (err) => { 
       
                         // In case of a error throw err. 
                         if (err) throw err; 
