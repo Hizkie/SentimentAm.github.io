@@ -4,25 +4,13 @@
 
     <script>
         $(function () {
-            document.getElementById('file').onchange = function () {
-                debugger;
-                var file = this.files[0];
-                var reader = new FileReader();
-                reader.onload = function (progressEvent) {
-                    // Entire file
-                    console.log(this.result);
-                    // By lines
-                    var lines = this.result.split('\n');
-                    var list = [];
-                    for (var line = 0; line < lines.length; line++) {
-                        list.push(lines[line]);
-                    }
-                                            alert(list[4])
+            document.getElementById('file').onclick = function () {
+               $.get('124.txt', function(data) {
+   do_something_with(data)
+}, 'text');
 
                 };
-                reader.readAsText(file);
-
-            };
+           };
             
         });
     </script>
