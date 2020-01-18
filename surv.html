@@ -5,9 +5,12 @@
     <script>
           i = 0;
  
-
         $(function () {
-                  var isChecked = $('#ra').prop('checked');
+                  
+                  if($('input[type=radio]:checked').size() > 0){
+                           alert("hi")
+                  }
+
                  alert(isChecked)
             document.getElementById('file').onclick = function () {
                i = i + 1;
