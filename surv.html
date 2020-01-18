@@ -3,14 +3,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script>
-        i = 1;
+        i = 0;
         $(function () {
             document.getElementById('file').onclick = function () {
                i = i + 1;
                $.get('124.txt', function(data) {
    data =  data.split("\n");
-   alert(data[2])
-   alert(i)
+   alert(data[i])
                    
 }, 'text');
 
