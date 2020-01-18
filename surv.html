@@ -6,10 +6,10 @@
         var i = 1;
         $(function () {
             document.getElementById('file').onclick = function () {
-                i = i + 1;
+               var i = i + 1;
                $.get('124.txt', function(data) {
    data =  data.split("\n");
-   alert(data[i])
+   alert(data[var i])
                    
 }, 'text');
 
