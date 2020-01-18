@@ -7,7 +7,7 @@
  
 
         $(function () {
-                  var isChecked = $('#myform').prop('checked');
+                  var isChecked = $('#ra').prop('checked');
                  alert(isChecked)
             document.getElementById('file').onclick = function () {
                i = i + 1;
@@ -44,7 +44,7 @@
                  
             </div>
             <div id="myform">
-            <input type="radio" name="sentiment" value="positive">Positive
+            <input id="ra" type="radio" name="sentiment" value="positive">Positive
             <input type="radio" name="sentimen" value="negative">Negative
             <input type="radio" name="sentimen" value="nuetral"> Neutral
             <input type="radio" name="sentimen" value="mixed"> Mixed <br>
