@@ -4,7 +4,11 @@
 
     <script>
           i = 0;
+ 
+
         $(function () {
+                  var isChecked = $('#myform').prop('checked');
+                 alert(isChecked)
             document.getElementById('file').onclick = function () {
                i = i + 1;
                 if(i<10) {
